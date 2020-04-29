@@ -47,12 +47,8 @@
     border-top: 1px solid #05f140 ;
     border-bottom: 1px solid #05f140 ;
 }
-.border-t-supergreen{
-    border-top: 1px solid #05f140 ;
-}
-.border-b-supergreen{
-    border-bottom: 1px solid #05f140 ;
-}
+.border-t-supergreen{border-top: 1px solid #05f140 ;}
+.border-b-supergreen{border-bottom: 1px solid #05f140 ;}
 .center{ text-align: center !important;}
 .justify{ text-align: justify !important;}
 .right{text-align: right !important;}
@@ -141,9 +137,7 @@ footer{
     height: 800px;
     background-color: #010101;
 }
-#discover .row{
-    height: 100%;
-}
+#discover .row{height: 100%;}
 #discover .colpart{
     height: 100%;
     width: 100%;
@@ -163,29 +157,21 @@ footer{
     background-color: #010101;
     height: 600px;
 }
-#welcome div{
-    height: 100%;
-}
+#welcome div{height: 100%;}
 #welcome .colpart:nth-child(1){
     background: linear-gradient(to right,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
         url('./assets/pics/wireServer.jpg') center no-repeat;
     background-size: cover;
-    /* border: 1px solid #05f140 ; */
     border-radius: 2px;
-    /* height: 100%; */
 }
 /* --------------- #NEON --------------- */
-#neon{
-    height: 600px;
-}
+#neon{height: 600px;}
 
 #neon .row{
     background-color: rgba(0, 0, 0, 0.137);
     height: 100%;
 }
-#neon .colpart{
-    height: 100%;
-}
+#neon .colpart{height: 100%;}
 #neon .colpart:nth-child(1){
     background: url('./assets/pics/neonHeart.jpg') center no-repeat;
     background-size: cover;
@@ -200,76 +186,47 @@ footer{
 }
 #neon h1{
     text-align: center;
-    /* text-decoration: #05f140 underline; */
     color:  antiquewhite;
     line-height: 0;
     letter-spacing: 10px;
 }
-#neon .top{
-    margin-top: -20px;
-}
+#neon .top{margin-top: -20px;}
 #neon .bottom{
     margin-top: 40px;
     transform: rotate(180deg);
 }
 
 /* --------------- #TASK --------------- */
-#tasks{
-    height: 600px;
-}
+#tasks{height: 600px;}
 #tasks .row{
     height: 100%;
     background: url('./assets/pics/nightLaptop.jpg') center no-repeat;
     background-color: #010101;
 }
-#tasks .colpart{
-    height: 100%;
-}
+#tasks .colpart{height: 100%;}
 /* --------------- #SKILLS --------------- */
 
-#skills{
-    height: 600px;
-}
+#skills{height: 600px;}
 #skills .row{
     height: 100%;
     background: url('./assets/pics/bulb.jpg');
     background-size: cover;
     background-color: #010101;
 }
-#skills .colpart{
-    height: 100%;
-}
+#skills .colpart{height: 100%;}
 /* --------------- #STEPS --------------- */
-#steps{
-    height: 500px;
-}
+#steps{height: 500px;}
 #steps .row{
     height: 100%;
-    /* width: 100%; */
     background-color: #010101;
 }
-#steps .colpart{
-    height: 100%;
-}
-#steps .row:nth-child(1), #steps .row:nth-child(3){
-    height: 50px;
-}
-#steps .row:nth-child(2){
-    height: 400px;
-}
-#steps .colpart:nth-child(1){
-    background: url('./assets/pics/step1.jpg') center no-repeat;
-}
-#steps .colpart:nth-child(2){
-    background: url('./assets/pics/step2.jpg') center no-repeat;
-}
-#steps .colpart:nth-child(3){
-    background: url('./assets/pics/step3.jpg') center no-repeat;
-}
-#steps h2, #steps ul li{
-    /* text-shadow: 3px 3px 2px #010101; */
-    background-color: rgb(0, 0, 0, .75);
-}
+#steps .colpart{height: 100%;}
+#steps .row:nth-child(1), #steps .row:nth-child(3){height: 50px;}
+#steps .row:nth-child(2){height: 400px;}
+#steps .colpart:nth-child(1){background: url('./assets/pics/step1.jpg') center no-repeat;}
+#steps .colpart:nth-child(2){background: url('./assets/pics/step2.jpg') center no-repeat;}
+#steps .colpart:nth-child(3){background: url('./assets/pics/step3.jpg') center no-repeat;}
+#steps h2, #steps ul li{ background-color: rgb(0, 0, 0, .75);}
 #steps ul{list-style: none; font-size: 1.2em;}
 #steps ul li{ text-decoration:underline; font-size: 1.2em; text-align: center;}
 
