@@ -1,0 +1,293 @@
+/* --------------- ANIMATIONS --------------- */
+
+/* the Typing Effect */
+ @keyframes typing {
+    from { width: 0 }
+    to { width: 100%}
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #05f140; }
+}
+@keyframes shade-in{
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+@keyframes huecool{
+    from{filter: hue-rotate(0deg);}
+    to{filter: hue-rotate(360deg);}
+}
+/* --------------- TRIGGER CLASS --------------- */
+.typewrited_start{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    border-right: .15em solid #05f140; /* The typwriter cursor */
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+.shade-in_short{animation: shade-in ease 1s;}
+.shade-in_medium{animation: shade-in ease 2s;}
+.shade-in_long{animation: shade-in ease 5s;}
+
+/* --------------- OO CLASS --------------- */
+.supergreen{color: #05f140 !important;}
+.superpink{color: #FF7DE9 !important;}
+.antiquewhite{ color: antiquewhite !important;}
+.border-w-supergreen{
+    border-right: 1px solid rgba(5, 241, 64) ;
+    border-left: 1px solid rgb(5, 241, 64) ;
+}
+.border-w-superpink{
+    border-right: 1px solid #FF7DE9 ;
+    border-left: 1px solid #FF7DE9 ;
+}
+.border-h-supergreen{
+    border-top: 1px solid #05f140 ;
+    border-bottom: 1px solid #05f140 ;
+}
+.border-t-supergreen{
+    border-top: 1px solid #05f140 ;
+}
+.border-b-supergreen{
+    border-bottom: 1px solid #05f140 ;
+}
+.center{ text-align: center !important;}
+.justify{ text-align: justify !important;}
+.right{text-align: right !important;}
+
+.typewrited{
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-xshort{height: 50px;}
+.parallax-short{height: 100px;}
+.parallax-medium{height: 250px;}
+.parallax-large{height: 500px;}
+.parallax-separator{background-image: url("./assets/pics/separator.jpg");}
+.parallax-laptop{background-image: url("./assets/pics/laptopVape.jpg");}
+.parallax-desk{background-image: url("./assets/pics/desk.jpg");}
+.parallax-meetme{ background-image: url("./assets/pics/meetme.jpg");}
+/* --------------- GEN --------------- */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #05f140 #010101 ;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 60px;
+    background: url('./assets/pics/dusk.jpg') center no-repeat;
+    background-size: cover;
+    background-color: #0c0e28;
+    box-shadow:0px 1px 1px #05f140;
+}
+p{font-size: 1.2em;}
+.navbar{height: 100%;transition: 1s ease;}
+.navbar.scrolled {
+    background-color: #000 !important;
+    transition: background-color 200ms linear;
+}
+.separator{
+    height: 50px;
+    padding-top: 10px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separator h2{
+    background-color: #010101;
+    color: antiquewhite;
+}
+
+#myquote{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-color: #010101;
+    color: antiquewhite;
+    /* margin-top: 100px; */
+    padding: 100px;
+}
+footer{
+    height: 300px;
+    background: url('./assets/pics/dusk.jpg') center no-repeat;
+    background-size: cover;
+    background-color: #0c0e28;
+    box-shadow:0px 1px 1px #05f140;
+}
+/* --------------- #DISCOVER --------------- */
+#discover{
+    height: 600px;
+    background-color: #010101;
+}
+#discover .row{
+    height: 100%;
+}
+#discover .colpart{
+    height: 100%;
+    width: 100%;
+}
+#discover .colpart:nth-child(3){
+    background: url('./assets/logos/avatar.svg') top no-repeat;
+    background-size: contain;
+    filter: grayscale(1);
+}
+#discover .colpart:nth-child(3):hover{
+    filter: grayscale(0);
+    transition: ease 0.2s;
+}
+
+/* --------------- #WELCOME --------------- */
+#welcome{
+    background-color: #010101;
+    height: 600px;
+}
+#welcome div{
+    height: 100%;
+}
+#welcome .colpart:nth-child(1){
+    background: linear-gradient(to right,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+        url('./assets/pics/wireServer.jpg') center no-repeat;
+    background-size: cover;
+    /* border: 1px solid #05f140 ; */
+    border-radius: 2px;
+    /* height: 100%; */
+}
+/* --------------- #NEON --------------- */
+#neon{
+    height: 600px;
+}
+
+#neon .row{
+    background-color: rgba(0, 0, 0, 0.137);
+    height: 100%;
+}
+#neon .colpart{
+    height: 100%;
+}
+#neon .colpart:nth-child(1){
+    background: url('./assets/pics/neonHeart.jpg') center no-repeat;
+    background-size: cover;
+}
+#neon .colpart:nth-child(2){
+    background: url('./assets/pics/neonLevel.jpg') center no-repeat;
+    background-size: cover;
+}
+#neon .colpart:nth-child(3){
+    background: url('./assets/pics/neonDiamond.jpg') center no-repeat;
+    background-size: cover;
+}
+#neon h1{
+    text-align: center;
+    /* text-decoration: #05f140 underline; */
+    color:  antiquewhite;
+    line-height: 0;
+    letter-spacing: 10px;
+}
+#neon .top{
+    margin-top: -20px;
+}
+#neon .bottom{
+    margin-top: 40px;
+    transform: rotate(180deg);
+}
+
+/* --------------- #TASK --------------- */
+#tasks{
+    height: 600px;
+}
+#tasks .row{
+    height: 100%;
+    background: url('./assets/pics/nightLaptop.jpg') center no-repeat;
+    background-color: #010101;
+}
+#tasks .colpart{
+    height: 100%;
+}
+/* --------------- #SKILLS --------------- */
+
+#skills{
+    height: 600px;
+}
+#skills .row{
+    height: 100%;
+    background: url('./assets/pics/bulb.jpg');
+    background-size: cover;
+    background-color: #010101;
+}
+#skills .colpart{
+    height: 100%;
+}
+/* --------------- #STEPS --------------- */
+#steps{
+    height: 500px;
+}
+#steps .row{
+    height: 100%;
+    /* width: 100%; */
+    background-color: #010101;
+}
+#steps .colpart{
+    height: 100%;
+}
+#steps .row:nth-child(1), #steps .row:nth-child(3){
+    height: 50px;
+}
+#steps .row:nth-child(2){
+    height: 400px;
+}
+#steps .colpart:nth-child(1){
+    background: url('./assets/pics/step1.jpg') center no-repeat;
+}
+#steps .colpart:nth-child(2){
+    background: url('./assets/pics/step2.jpg') center no-repeat;
+}
+#steps .colpart:nth-child(3){
+    background: url('./assets/pics/step3.jpg') center no-repeat;
+}
+#steps h2, #steps ul li{
+    text-shadow: 3px 3px 2px #010101;
+}
+#steps ul{list-style: none; font-size: 1.2em;}
+#steps ul li{ text-decoration:underline; font-size: 1.2em; text-align: center;}
+
+/* --------------- #DONOTWAIT --------------- */
+#donotwait{
+    height: 600px; 
+    animation: huecool 1s ease infinite;
+}
+#donotwait .row{
+    height: 100%;
+    background: url('./assets/logos/avatar.svg') center no-repeat;
+    background-size: cover;
+    background-color: #010101;
+}
+#donotwait .colpart{
+    height: 100%;
+    animation: none;
+}
+/* --------------- FOOTER --------------- */
+footer .container{
+    height: 100%;
+    padding: 20px;
+}
+
