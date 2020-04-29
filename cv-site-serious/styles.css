@@ -113,8 +113,10 @@ p{font-size: 1.2em;}
     justify-content: center;
     align-items: center;
 }
-.separator h2{
+.separator h3{
+    /* background-color: red !important; */
     background-color: #010101;
+    /* color: blue; */
     color: antiquewhite;
 }
 
@@ -136,7 +138,7 @@ footer{
 }
 /* --------------- #DISCOVER --------------- */
 #discover{
-    height: 600px;
+    height: 800px;
     background-color: #010101;
 }
 #discover .row{
@@ -265,7 +267,8 @@ footer{
     background: url('./assets/pics/step3.jpg') center no-repeat;
 }
 #steps h2, #steps ul li{
-    text-shadow: 3px 3px 2px #010101;
+    /* text-shadow: 3px 3px 2px #010101; */
+    background-color: rgb(0, 0, 0, .75);
 }
 #steps ul{list-style: none; font-size: 1.2em;}
 #steps ul li{ text-decoration:underline; font-size: 1.2em; text-align: center;}
